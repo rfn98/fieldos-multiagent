@@ -1,0 +1,47 @@
+{
+  "name": "fieldos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "node --import tsx --test \"test/**/*.test.ts\"",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "prisma db seed",
+    "moss:index": "tsx scripts/index-moss.ts",
+    "moss:index:custom": "tsx scripts/index-moss-custom.ts",
+    "qdrant:index": "tsx scripts/index-qdrant.ts",
+    "typecheck:scripts": "tsc --noEmit -p tsconfig.scripts.json"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@moss-dev/moss": "latest",
+    "@prisma/client": "6.19.3",
+    "@qdrant/js-client-rest": "^1.19.0",
+    "next": "latest",
+    "onnxruntime-node": "^1.21.0",
+    "onnxruntime-web": "^1.22.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prisma": "6.19.3",
+    "tailwindcss": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}

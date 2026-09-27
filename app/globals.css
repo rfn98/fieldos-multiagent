@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #09090b;
+  color: #e4e4e7;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3f3f46 transparent;
+}
